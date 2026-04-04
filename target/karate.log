@@ -1,0 +1,308 @@
+15:58:09.081 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:58:09.089 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775336289085
+15:58:09.096 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+15:58:10.269 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:58:10.786 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 307
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser1775336290277%40test.com&password=Password123&title=Mr&birth_date=15&birth_month=6&birth_year=1995&firstname=Test&lastname=User&company=TestCompany&address1=Calle+123&address2=Apto+456&country=United+States&zipcode=12345&state=California&city=Los+Angeles&mobile_number=3001234567
+
+15:58:12.648 [main] DEBUG com.intuit.karate - response time in milliseconds: 1861
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:58:09 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bOdPvVZ9IcNwq6vN7oivsNbcpji7HlvzXmEc%2Bq2whwnzYFOgNH%2BTIWfbGDYGcB%2FV0t2BrBkHM2DoescV%2FFcrHTJ9B15jSfuegwJWEPaUP1GgEAkojHBzVbdF5qoKYx6PvBPd6t8c7i%2B%2F"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=276
+1 < CF-RAY: 9e733ac279ed8c20-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:58:13.405 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:features/createUser.feature
+15:58:13.418 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:58:13.427 [main] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=testuser1775336293420%40test.com
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:58:14.723 [main] DEBUG com.intuit.karate - response time in milliseconds: 1295
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:58:11 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: GET, OPTIONS, DELETE, POST, PUT
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fGVf1gyClvuMywHBCHaFyvAnaYJs0snEYt62q3YJMSmXmFhyyZULARG9AdeteEwBEWeNUQvbsn3sUxMBI%2FguUbnYFH2zXeYNfAa8lw9XF3MlYCKwwbCCErF1npRJBJeGxK6AEO1mX6x7"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=280
+1 < CF-RAY: 9e733acf0be65e2a-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 404, "message": "Account not found with this email, try another email!"}
+
+15:58:14.727 [main] ERROR com.intuit.karate - classpath:features/getUser.feature:12
+And match response.responseCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  404
+  200
+
+classpath:features/getUser.feature:12
+15:58:14.825 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 4 (2 remaining) classpath:features/getUser.feature
+15:58:14.833 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:58:14.843 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://automationexercise.com/api/updateAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 305
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser1775336294834%40test.com&password=Password123&title=Mrs&birth_date=20&birth_month=3&birth_year=1990&firstname=Updated&lastname=User&company=UpdatedCompany&address1=Carrera+456&address2=Oficina+789&country=Canada&zipcode=67890&state=Ontario&city=Toronto&mobile_number=3009876543
+
+15:58:16.114 [main] DEBUG com.intuit.karate - response time in milliseconds: 1270
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:58:13 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: PUT, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RIApAoN%2BpTOyQDcoGtrY6bY5%2F4TPmwNplduGvtGRJwI8ScUWjeDCi9xhgvofKdhnRmWVZBthEQBwk3Y%2F9Ed5FjUPmdWZ616SL0bWZuQ5dWgBTuF6mVpB2F0g%2Bkv2w0vU7MTX2gl4NnWc"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=80
+1 < CF-RAY: 9e733ad94db5c13e-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 404, "message": "Account not found!"}
+
+15:58:16.114 [main] ERROR com.intuit.karate - classpath:features/updateUser.feature:28
+And match response.responseCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  404
+  200
+
+classpath:features/updateUser.feature:28
+15:58:16.237 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 4 (1 remaining) classpath:features/updateUser.feature
+15:58:16.247 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:58:16.251 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://automationexercise.com/api/deleteAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 59
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+email=testuser1775336296247%40test.com&password=Password123
+
+15:58:17.215 [main] DEBUG com.intuit.karate - response time in milliseconds: 964
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:58:14 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: DELETE, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=94C7SfnyXFLgIIkZWRSwkL1jCO4b25qirlqPcLIO03RypegQVDPomPx2L8Ris8KGXEq6diUT6uZsHB0cb0jv3I1sCvn%2FdbW6%2Fnt4CNbl5Brcx8%2FyROaWULGBgUuFT7B68W%2Blo0JQu8Bb"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=84
+1 < CF-RAY: 9e733adcfab6a274-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 404, "message": "Account not found!"}
+
+15:58:17.219 [main] ERROR com.intuit.karate - classpath:features/deleteUser.feature:13
+And match response.responseCode == 200
+match failed: EQUALS
+  $ | not equal (NUMBER:NUMBER)
+  404
+  200
+
+classpath:features/deleteUser.feature:13
+15:58:17.374 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 4 (0 remaining) classpath:features/deleteUser.feature
+16:00:53.635 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:00:53.642 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775336453638
+16:00:53.651 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+16:00:54.792 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:00:54.804 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/generate-email.js
+16:00:54.858 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/generate-email.js
+16:00:55.263 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 307
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser1775336454816%40test.com&password=Password123&title=Mr&birth_date=15&birth_month=6&birth_year=1995&firstname=Test&lastname=User&company=TestCompany&address1=Calle+123&address2=Apto+456&country=United+States&zipcode=12345&state=California&city=Los+Angeles&mobile_number=3001234567
+
+16:00:56.014 [main] DEBUG com.intuit.karate - response time in milliseconds: 748
+1 < 200
+1 < Date: Sat, 04 Apr 2026 21:00:53 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mdEdrWlI6KzhiCUcdd08N%2BaCRgMSnoiFI6xyJCuNE9G8X8lPXNnBHMUv05m7%2FT0Dlpnrk6kWcWzHz%2BBAD%2B5gzFP5zc062PF%2FnEa0XckdpOUkupNl1bzAbDI7Ds2sSdc0z%2FbOmNmUc7fo"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=7,cfOrigin;dur=273
+1 < CF-RAY: 9e733ebf5ba5b207-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+16:00:56.684 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:features/createUser.feature
+16:00:56.698 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:00:56.706 [main] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=testuser1775336454816%40test.com
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:00:56.989 [main] DEBUG com.intuit.karate - response time in milliseconds: 282
+1 < 200
+1 < Date: Sat, 04 Apr 2026 21:00:54 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: GET, OPTIONS, DELETE, POST, PUT
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2Bn5h1pinDM3v8xLPPKVnxu4%2FKK4wDsuMSwUuCgF64fUd4U%2B7AH4KOq0Fj0pz7K%2BuSQ0IZTPmAf2BlGuM68zAzO6c6SlfDEVCjscL4i18YwoFW0XCgOTmcpzFtV%2BsVcGey7zcRE4gppDg"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=83
+1 < CF-RAY: 9e733ec6af07e855-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "user": {"id": 1542652, "name": "TestUser", "email": "testuser1775336454816@test.com", "title": "Mr", "birth_day": "15", "birth_month": "6", "birth_year": "1995", "first_name": "Test", "last_name": "User", "company": "TestCompany", "address1": "Calle 123", "address2": "Apto 456", "country": "United States", "state": "California", "city": "Los Angeles", "zipcode": "12345"}}
+
+16:00:57.051 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:features/getUser.feature
+16:00:57.057 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:00:57.070 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://automationexercise.com/api/updateAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 305
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser1775336454816%40test.com&password=Password123&title=Mrs&birth_date=20&birth_month=3&birth_year=1990&firstname=Updated&lastname=User&company=UpdatedCompany&address1=Carrera+456&address2=Oficina+789&country=Canada&zipcode=67890&state=Ontario&city=Toronto&mobile_number=3009876543
+
+16:00:57.610 [main] DEBUG com.intuit.karate - response time in milliseconds: 540
+1 < 200
+1 < Date: Sat, 04 Apr 2026 21:00:54 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: PUT, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6lu7qK8xTPNjUIMJH2D9N%2F9vLm%2FTaEiaKMcrQxoJLnkfBzPKx5%2Fbk2IJWCZP6NEQ8LyIQdIndEuDsMzyJt1aGTHGgcym2PQ1QtDP0Y6edDa5daXHtrR62iXBAigqjMKG9uPh5DxZj9wM"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=356
+1 < CF-RAY: 9e733ec8d81fa6ac-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "User updated!"}
+
+16:00:57.770 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:features/updateUser.feature
+16:00:57.776 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:00:57.781 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://automationexercise.com/api/deleteAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 59
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+email=testuser1775336454816%40test.com&password=Password123
+
+16:00:58.218 [main] DEBUG com.intuit.karate - response time in milliseconds: 436
+1 < 200
+1 < Date: Sat, 04 Apr 2026 21:00:55 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: DELETE, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MbURI7Z%2FNkRlQ5lqTmAF%2F%2F%2BpytgTzrBJAhl0BpE4OUZBb88nSvSwqxt7HFfT6spejNuh9dxu1nLkfiZzCXENyIXUn5se1kGFJc4RD2Dg%2FAuYkW4worQXktM3t9UWlXuwtL98eURp7DG9"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=267
+1 < CF-RAY: 9e733ecd3902a539-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "Account deleted!"}
+
+16:00:58.275 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:features/deleteUser.feature
