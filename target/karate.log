@@ -1,0 +1,483 @@
+15:12:28.173 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:29.229 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:29.625 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333549237%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:30.814 [main] DEBUG com.intuit.karate - response time in milliseconds: 1178
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:28 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lVFY7GrMFt%2FoVmxORXCBaqQWD9%2BbEhq3%2FdAeHiek7EDMxsLY%2FH%2BnsKG0D3SEEREveL4UgzygOu2%2B5d1OqSO1HtEtDabFSEfvLdDGKJSJgej3mnZuPDmWXdeCObITmfy0QXmQHxIb9yVh"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=294
+1 < CF-RAY: 9e72f7d4bbc60efd-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:31.569 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:31.588 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('createUser.feature')
+15:12:31.602 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333551571%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:32.443 [main] DEBUG com.intuit.karate - response time in milliseconds: 836
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:30 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zFE%2BbDOD6cVxn%2BBETPjcg4anSu4kNWC8EB%2Bo9Yb%2FqokoQHJqhZG3odnF3%2BEnlP6suGpILRCqSJab%2BwaEoBo3QqreQwB8uJdLfqIUdeI0OF7x6Fx%2Fyx7VYCO8nZiruNM01LOBNCWBKGEY"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=292
+1 < CF-RAY: 9e72f7dedf469af1-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:32.447 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('createUser.feature')
+15:12:32.455 [main] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=testuser_1775333551571%40mail.com
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:12:33.093 [main] DEBUG com.intuit.karate - response time in milliseconds: 637
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:30 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS, PUT, GET, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rXpQ3smH4p64qbw1STHVILBAg44ci49ggWerb73y7RH8UNJIixa8lUpwLmDrvk9CrRkj%2FK7Rh0xwHC1mGsG6WOcTMhLG79IcZ7nw3chIUTBJpWOWh4rEgyUNr4%2BZKuAK68pXNRdo28Ny"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=269
+1 < CF-RAY: 9e72f7e31b1cc9df-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "user": {"id": 1542628, "name": "TestUser", "email": "testuser_1775333551571@mail.com", "title": "Mr", "birth_day": "15", "birth_month": "6", "birth_year": "1990", "first_name": "Test", "last_name": "User", "company": "TestCompany", "address1": "123 Test Street", "address2": "Apt 4B", "country": "United States", "state": "California", "city": "Los Angeles", "zipcode": "90001"}}
+
+15:12:33.544 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:33.559 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('createUser.feature')
+15:12:33.577 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333553548%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:38.185 [main] DEBUG com.intuit.karate - response time in milliseconds: 4606
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:35 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mIOrnP5%2Frcx0eE5kussMSGM3CS8naZ8DcqcjhZg7L%2FXczBK2ByfQt8l4X%2Fkx%2FQg1YJzvgIcsTo86S5t%2Bu3HbUUSN%2B8wzPcBY6AnokBHi%2F0pc2ldaJYKaASXoTXHEhijH3phNuxb81o%2BN"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=278
+1 < CF-RAY: 9e72f8012b577462-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:38.189 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('createUser.feature')
+15:12:38.204 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://automationexercise.com/api/updateAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 332
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333553548%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=UpdatedTest&lastname=UpdatedUser&company=UpdatedCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:38.760 [main] DEBUG com.intuit.karate - response time in milliseconds: 554
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:36 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, PUT
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4gXyAvaYXum2kLKdD9ifPcrvCJQ8UH%2FCao%2FI%2BnBfL7jeYVcls6k4u7guvXix4w2ae4JrlETay5cxHjZ5fVvqo9fxlk2RzCIM7E%2B0HvjaIjK73M9%2Fr6GMNSZ%2FZqcDTeQDtrO9JJB4uSfq"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=113
+1 < CF-RAY: 9e72f806da9a743e-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "User updated!"}
+
+15:12:38.956 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:38.963 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('createUser.feature')
+15:12:38.976 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333558958%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:39.495 [main] DEBUG com.intuit.karate - response time in milliseconds: 518
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:37 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=soBiwrY4rwAtNpunz35gqjT1vePNAJYErHYslHxfJLiavnjy09A7j45j5gFYkfEsUN0PadrqMFtV%2FBqvOdVzmDibbcvUj0h70VTBSFJ0GrrCH6B8ebfNGimoYgx3RCnrzROhHyyIdz%2Bj"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=274
+1 < CF-RAY: 9e72f80b197a6daf-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:39.498 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('createUser.feature')
+15:12:39.504 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://automationexercise.com/api/deleteAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 63
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+email=testuser_1775333558958%40mail.com&password=Password123%21
+
+15:12:40.030 [main] DEBUG com.intuit.karate - response time in milliseconds: 525
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:37 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UjaM1NQdhAbfkEdV8P9aw99uuIQuoM7K7RTUBosqQol7kqY9l8YnFvg4PT2JuxKP1ek3w8VTFHzl%2FqFDLSqs7pyTAGGJFZeA9T7HLhUOptsasDFACr9GnNaSTM7Nh%2F5MhU28JXrLGV0m"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=289
+1 < CF-RAY: 9e72f80e58a7b0ae-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "Account deleted!"}
+
+15:12:40.293 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:40.304 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:40.310 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('createUser.feature')
+15:12:40.322 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333560306%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:40.627 [main] DEBUG com.intuit.karate - response time in milliseconds: 288
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:38 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=OrGA6pQlSd5SctMB9laolIWlVzDpyfzNzNcufVZ302timFT1xco3rv8t35WpFZOrd3Pjkg4ZkM3ap%2BLnGAz69dbC%2B69IJJIybglbdbxSyKmU4vdgsICUF85K8aHASYIkXIH2EnP%2FdGwA"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=7,cfOrigin;dur=84
+1 < CF-RAY: 9e72f8134e5e67b7-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:40.629 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('createUser.feature')
+15:12:40.639 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://automationexercise.com/api/updateAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 332
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333560306%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=UpdatedTest&lastname=UpdatedUser&company=UpdatedCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:41.844 [main] DEBUG com.intuit.karate - response time in milliseconds: 1204
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:39 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, PUT
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vd2bOJEzRPn6y36RRUoPM4zgFAtmkr9EXC93uj%2BDIlCSigyBzxg%2F66A0Z%2Bh7mwV43Vo7d%2BG5mZ1GIg3FmTLPWMC8myAvr9U018FQXRIWvrfB1Bwe98lBvD7tO1SIdK4vAhUvcUWBowue"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=296
+1 < CF-RAY: 9e72f8198c29b356-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "User updated!"}
+
+15:12:42.089 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:42.098 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:42.104 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('createUser.feature')
+15:12:42.116 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333562101%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:42.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 658
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:40 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gTa9iS3vIQJfOLzSwitB5ayzGGFa0L%2BgNg0gTZTTScmniES6M12XLQQ%2FBF6%2Bh5nSFxTHn7EKxD0lKXePP4CpZxxqPm1GyuSN%2Bves329wqBBoFQqQHKxvy15L86ovYQi5syy%2BGyPRzsZt"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=275
+1 < CF-RAY: 9e72f81f8ceaed32-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:42.835 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('createUser.feature')
+15:12:42.838 [main] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=testuser_1775333562101%40mail.com
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:12:43.681 [main] DEBUG com.intuit.karate - response time in milliseconds: 842
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS, PUT, GET, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=M4I7Vl8co0b%2BECBe47BgDJnvYjInvcLTvR13vMNUU37jTWcfm%2FLg5bbsDwRwKh7w58r4eHFEcZBzYs%2BKKHqXtyRamvwBm0NL57AAtEtN5Vu2BXOxa%2B3qXMy8nKdz4jMHywy51PnKIzWu"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=9,cfOrigin;dur=255
+1 < CF-RAY: 9e72f824db2e748d-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "user": {"id": 1542633, "name": "TestUser", "email": "testuser_1775333562101@mail.com", "title": "Mr", "birth_day": "15", "birth_month": "6", "birth_year": "1990", "first_name": "Test", "last_name": "User", "company": "TestCompany", "address1": "123 Test Street", "address2": "Apt 4B", "country": "United States", "state": "California", "city": "Los Angeles", "zipcode": "90001"}}
+
+15:12:43.805 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:43.812 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:43.819 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333563814%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:44.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 584
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:42 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZXfzNYQ0q3fid0qqi4uwIkvYd7ZwEq2k1s%2FU%2BdDpRv%2F%2F9I%2FqagBKhbdyBthPPlupLnkRj7qqq5K4szFwOXwxtv%2FBfzfRvs4NVUKmzHAATjh7YfMuH6GbSKx06UTCYgEteFmvLv9JcJ%2Ba"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=97
+1 < CF-RAY: 9e72f82aee228d9c-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:44.500 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:44.506 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:44.509 [main] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('createUser.feature')
+15:12:44.517 [main] DEBUG com.intuit.karate - request:
+1 > POST https://automationexercise.com/api/createAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 315
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+name=TestUser&email=testuser_1775333564507%40mail.com&password=Password123%21&title=Mr&birth_date=15&birth_month=6&birth_year=1990&firstname=Test&lastname=User&company=TestCompany&address1=123+Test+Street&address2=Apt+4B&country=United+States&zipcode=90001&state=California&city=Los+Angeles&mobile_number=1234567890
+
+15:12:45.018 [main] DEBUG com.intuit.karate - response time in milliseconds: 478
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:42 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: POST, OPTIONS
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=slwAjDPRsPRibxZs42maGCWUyRo4e1dVHUs%2F2KzX65OcOUyFEZmNhpxRrpqJNDJN%2Bazp7lhHdtV4LJ8QdGITTqCot1LtFpoyE3e%2FpCXZ8doDyEdMTkeThHjfQ5RSFFd1TsiKOyqRRZ%2BR"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=84
+1 < CF-RAY: 9e72f82ebe8dc717-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 201, "message": "User created!"}
+
+15:12:45.020 [main] INFO  com.intuit.karate - << lock released, cached callonce: read('createUser.feature')
+15:12:45.029 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://automationexercise.com/api/deleteAccount
+1 > Content-Type: application/x-www-form-urlencoded
+1 > Content-Length: 63
+1 > Host: automationexercise.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+email=testuser_1775333564507%40mail.com&password=Password123%21
+
+15:12:45.621 [main] DEBUG com.intuit.karate - response time in milliseconds: 591
+1 < 200
+1 < Date: Sat, 04 Apr 2026 20:12:43 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < vary: Accept,Cookie,Accept-Encoding
+1 < referrer-policy: same-origin
+1 < x-frame-options: DENY
+1 < x-content-type-options: nosniff
+1 < allow: OPTIONS, DELETE
+1 < x-powered-by: Phusion Passenger(R) 6.1.2
+1 < status: 200 OK
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VJa6iG6S5Nm%2Bl8gdQuVrHPmqYeBsYCd8905ZIcB7XvavYg5uxVib7H3G1njHVqGp0Wb4gdx2Y9YsLsCce5q6V9NLKL%2B5gdGBETiL%2BBosLK2tZ2%2FERBxG4FTsCeznsuce%2B7onhEgaAfzL"}]}
+1 < Server: cloudflare
+1 < cf-cache-status: DYNAMIC
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=4,cfOrigin;dur=104
+1 < CF-RAY: 9e72f8324b03de00-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{"responseCode": 200, "message": "Account deleted!"}
+
