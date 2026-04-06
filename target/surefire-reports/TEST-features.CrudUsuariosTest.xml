@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="features.CrudUsuariosTest" time="5.882" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="features.CrudUsuariosTest" time="7.366" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.10\bin"/>
-    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire2227890331452402837\surefirebooter-20260404160052045_3.jar C:\Users\Asus\AppData\Local\Temp\surefire2227890331452402837 2026-04-04T16-00-51_912-jvmRun1 surefire-20260404160052045_1tmp surefire_0-20260404160052045_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Asus\AppData\Local\Temp\surefire11519097816328006711\surefirebooter-20260404162852302_3.jar C:\Users\Asus\AppData\Local\Temp\surefire11519097816328006711 2026-04-04T16-28-52_125-jvmRun1 surefire-20260404162852302_1tmp surefire_0-20260404162852302_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="features.CrudUsuariosTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Asus\OneDrive\Documents\Sofka U\automatizacion-api-karate\target\test-classes;C:\Users\Asus\OneDrive\Documents\Sofka U\automatizacion-api-karate\target\classes;C:\Users\Asus\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\Asus\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\Asus\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\Asus\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\Asus\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\Asus\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\Asus\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\Asus\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Asus\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\Asus\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\Asus\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\Asus\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\Asus\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\Asus\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\Asus\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\Asus\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\Asus\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\Asus\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\Asus\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\Asus\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Asus\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Asus\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\Asus\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\Asus\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\Asus\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\Asus\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\Asus\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\Asus\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\Asus\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Asus\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\Asus\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\Asus\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\Asus\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\Asus\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Asus\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\Asus\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Asus\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Asus\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Asus\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Asus\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Asus\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\Asus\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\Asus\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\Asus\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\Asus\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\Asus\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Asus\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Asus\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Asus\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Asus\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Asus\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Asus"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire2227890331452402837\surefirebooter-20260404160052045_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Asus\AppData\Local\Temp\surefire11519097816328006711\surefirebooter-20260404162852302_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+8-LTS-217"/>
@@ -59,14 +58,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testCrudUsuarios" classname="features.CrudUsuariosTest" time="5.851">
-    <system-out><![CDATA[16:00:53.635 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-16:00:53.642 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1775336453638
-16:00:53.651 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
-16:00:54.792 [main] INFO  com.intuit.karate - karate.env system property was: null 
-16:00:54.804 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/generate-email.js
-16:00:54.858 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/generate-email.js
-16:00:55.263 [main] DEBUG com.intuit.karate - request:
+  <testcase name="testCrudUsuarios" classname="features.CrudUsuariosTest" time="7.345">
+    <system-out><![CDATA[16:28:53.761 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:28:53.770 [main] DEBUG com.intuit.karate.Suite - waiting for 4 features to complete
+16:28:54.816 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:28:54.822 [main] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:features/generate-email.js
+16:28:54.880 [main] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:features/generate-email.js
+16:28:55.320 [main] DEBUG com.intuit.karate - request:
 1 > POST https://automationexercise.com/api/createAccount
 1 > Content-Type: application/x-www-form-urlencoded
 1 > Content-Length: 307
@@ -74,11 +72,11 @@
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
-name=TestUser&email=testuser1775336454816%40test.com&password=Password123&title=Mr&birth_date=15&birth_month=6&birth_year=1995&firstname=Test&lastname=User&company=TestCompany&address1=Calle+123&address2=Apto+456&country=United+States&zipcode=12345&state=California&city=Los+Angeles&mobile_number=3001234567
+name=TestUser&email=testuser1775338134842%40test.com&password=Password123&title=Mr&birth_date=15&birth_month=6&birth_year=1995&firstname=Test&lastname=User&company=TestCompany&address1=Calle+123&address2=Apto+456&country=United+States&zipcode=12345&state=California&city=Los+Angeles&mobile_number=3001234567
 
-16:00:56.014 [main] DEBUG com.intuit.karate - response time in milliseconds: 748
+16:28:56.504 [main] DEBUG com.intuit.karate - response time in milliseconds: 1172
 1 < 200
-1 < Date: Sat, 04 Apr 2026 21:00:53 GMT
+1 < Date: Sat, 04 Apr 2026 21:28:53 GMT
 1 < Content-Type: text/html; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -89,34 +87,34 @@ name=TestUser&email=testuser1775336454816%40test.com&password=Password123&title=
 1 < allow: POST, OPTIONS
 1 < x-powered-by: Phusion Passenger(R) 6.1.2
 1 < status: 200 OK
-1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mdEdrWlI6KzhiCUcdd08N%2BaCRgMSnoiFI6xyJCuNE9G8X8lPXNnBHMUv05m7%2FT0Dlpnrk6kWcWzHz%2BBAD%2B5gzFP5zc062PF%2FnEa0XckdpOUkupNl1bzAbDI7Ds2sSdc0z%2FbOmNmUc7fo"}]}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iOIX%2B7Nkf%2F0uotHoyjyYQfWwIARNVVONGCAnOcnbZqDUxfQi9khe7nG1ywTawxr1Sx0liRHafuR48aov502SPoPvN29lBcr4xmDkteaq7vJCgPM9A1k61x2VhE5%2BiDcts6wAYn0Bau5B"}]}
 1 < Server: cloudflare
 1 < cf-cache-status: DYNAMIC
 1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
-1 < Server-Timing: cfEdge;dur=7,cfOrigin;dur=273
-1 < CF-RAY: 9e733ebf5ba5b207-MIA
+1 < Server-Timing: cfEdge;dur=10,cfOrigin;dur=270
+1 < CF-RAY: 9e7367c48bfc742c-MIA
 1 < alt-svc: h3=":443"; ma=86400
 {"responseCode": 201, "message": "User created!"}
 
 ---------------------------------------------------------
 feature: classpath:features/createUser.feature
-scenarios:  1 | passed:  1 | failed:  0 | time: 1.1700
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.6390
 ---------------------------------------------------------
 
-16:00:56.684 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:features/createUser.feature
-16:00:56.698 [main] INFO  com.intuit.karate - karate.env system property was: null 
-16:00:56.706 [main] DEBUG com.intuit.karate - request:
-1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=testuser1775336454816%40test.com
+16:28:57.317 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 4 (3 remaining) classpath:features/createUser.feature
+16:28:57.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:28:57.343 [main] DEBUG com.intuit.karate - request:
+1 > GET https://automationexercise.com/api/getUserDetailByEmail?email=testuser1775338134842%40test.com
 1 > Host: automationexercise.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
 
 
-16:00:56.989 [main] DEBUG com.intuit.karate - response time in milliseconds: 282
+16:28:58.304 [main] DEBUG com.intuit.karate - response time in milliseconds: 958
 1 < 200
-1 < Date: Sat, 04 Apr 2026 21:00:54 GMT
+1 < Date: Sat, 04 Apr 2026 21:28:55 GMT
 1 < Content-Type: text/html; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -127,24 +125,24 @@ scenarios:  1 | passed:  1 | failed:  0 | time: 1.1700
 1 < allow: GET, OPTIONS, DELETE, POST, PUT
 1 < x-powered-by: Phusion Passenger(R) 6.1.2
 1 < status: 200 OK
-1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2Bn5h1pinDM3v8xLPPKVnxu4%2FKK4wDsuMSwUuCgF64fUd4U%2B7AH4KOq0Fj0pz7K%2BuSQ0IZTPmAf2BlGuM68zAzO6c6SlfDEVCjscL4i18YwoFW0XCgOTmcpzFtV%2BsVcGey7zcRE4gppDg"}]}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eReLLCOIaPRRwkiT6PTLDoOZx%2FiHUWQcsHTiRd1pbt7amyNUUz1%2BhwrEsKWKwivdShM4WRGsKxNEumQFFsbugiUeahjqKllq%2Bmghr%2BMXX6PFl%2B45fX5jZpjPRSVeBK5j2rF%2BYqEf%2Bxtd"}]}
 1 < Server: cloudflare
 1 < cf-cache-status: DYNAMIC
 1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
-1 < Server-Timing: cfEdge;dur=5,cfOrigin;dur=83
-1 < CF-RAY: 9e733ec6af07e855-MIA
+1 < Server-Timing: cfEdge;dur=11,cfOrigin;dur=284
+1 < CF-RAY: 9e7367ce5abae9f0-MIA
 1 < alt-svc: h3=":443"; ma=86400
-{"responseCode": 200, "user": {"id": 1542652, "name": "TestUser", "email": "testuser1775336454816@test.com", "title": "Mr", "birth_day": "15", "birth_month": "6", "birth_year": "1995", "first_name": "Test", "last_name": "User", "company": "TestCompany", "address1": "Calle 123", "address2": "Apto 456", "country": "United States", "state": "California", "city": "Los Angeles", "zipcode": "12345"}}
+{"responseCode": 200, "user": {"id": 1542674, "name": "TestUser", "email": "testuser1775338134842@test.com", "title": "Mr", "birth_day": "15", "birth_month": "6", "birth_year": "1995", "first_name": "Test", "last_name": "User", "company": "TestCompany", "address1": "Calle 123", "address2": "Apto 456", "country": "United States", "state": "California", "city": "Los Angeles", "zipcode": "12345"}}
 
 ---------------------------------------------------------
 feature: classpath:features/getUser.feature
-scenarios:  1 | passed:  1 | failed:  0 | time: 0.2912
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.9727
 ---------------------------------------------------------
 
-16:00:57.051 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:features/getUser.feature
-16:00:57.057 [main] INFO  com.intuit.karate - karate.env system property was: null 
-16:00:57.070 [main] DEBUG com.intuit.karate - request:
+16:28:58.378 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 4 (2 remaining) classpath:features/getUser.feature
+16:28:58.386 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:28:58.396 [main] DEBUG com.intuit.karate - request:
 1 > PUT https://automationexercise.com/api/updateAccount
 1 > Content-Type: application/x-www-form-urlencoded
 1 > Content-Length: 305
@@ -152,11 +150,11 @@ scenarios:  1 | passed:  1 | failed:  0 | time: 0.2912
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
-name=TestUser&email=testuser1775336454816%40test.com&password=Password123&title=Mrs&birth_date=20&birth_month=3&birth_year=1990&firstname=Updated&lastname=User&company=UpdatedCompany&address1=Carrera+456&address2=Oficina+789&country=Canada&zipcode=67890&state=Ontario&city=Toronto&mobile_number=3009876543
+name=TestUser&email=testuser1775338134842%40test.com&password=Password123&title=Mrs&birth_date=20&birth_month=3&birth_year=1990&firstname=Updated&lastname=User&company=UpdatedCompany&address1=Carrera+456&address2=Oficina+789&country=Canada&zipcode=67890&state=Ontario&city=Toronto&mobile_number=3009876543
 
-16:00:57.610 [main] DEBUG com.intuit.karate - response time in milliseconds: 540
+16:28:59.121 [main] DEBUG com.intuit.karate - response time in milliseconds: 724
 1 < 200
-1 < Date: Sat, 04 Apr 2026 21:00:54 GMT
+1 < Date: Sat, 04 Apr 2026 21:28:56 GMT
 1 < Content-Type: text/html; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -167,24 +165,24 @@ name=TestUser&email=testuser1775336454816%40test.com&password=Password123&title=
 1 < allow: PUT, OPTIONS
 1 < x-powered-by: Phusion Passenger(R) 6.1.2
 1 < status: 200 OK
-1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6lu7qK8xTPNjUIMJH2D9N%2F9vLm%2FTaEiaKMcrQxoJLnkfBzPKx5%2Fbk2IJWCZP6NEQ8LyIQdIndEuDsMzyJt1aGTHGgcym2PQ1QtDP0Y6edDa5daXHtrR62iXBAigqjMKG9uPh5DxZj9wM"}]}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rXTDwiHrtYvlnQtNMXijU8XnZOJkT60gW4XTG4tQ0dtXDLe0JIvX%2Fmwkr%2Fo3A7cNH2uiUMoGEvwzjDTkJXd9PyNob3bpi9IVSNPcPgttujbpkhePUS5Imhg0jhhLNdsiuuzG3xghx%2BO0"}]}
 1 < Server: cloudflare
 1 < cf-cache-status: DYNAMIC
 1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
-1 < Server-Timing: cfEdge;dur=6,cfOrigin;dur=356
-1 < CF-RAY: 9e733ec8d81fa6ac-MIA
+1 < Server-Timing: cfEdge;dur=9,cfOrigin;dur=362
+1 < CF-RAY: 9e7367d44e6d9cda-MIA
 1 < alt-svc: h3=":443"; ma=86400
 {"responseCode": 200, "message": "User updated!"}
 
 ---------------------------------------------------------
 feature: classpath:features/updateUser.feature
-scenarios:  1 | passed:  1 | failed:  0 | time: 0.5536
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.7362
 ---------------------------------------------------------
 
-16:00:57.770 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:features/updateUser.feature
-16:00:57.776 [main] INFO  com.intuit.karate - karate.env system property was: null 
-16:00:57.781 [main] DEBUG com.intuit.karate - request:
+16:28:59.272 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 4 (1 remaining) classpath:features/updateUser.feature
+16:28:59.281 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:28:59.288 [main] DEBUG com.intuit.karate - request:
 1 > DELETE https://automationexercise.com/api/deleteAccount
 1 > Content-Type: application/x-www-form-urlencoded
 1 > Content-Length: 59
@@ -192,11 +190,11 @@ scenarios:  1 | passed:  1 | failed:  0 | time: 0.5536
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
-email=testuser1775336454816%40test.com&password=Password123
+email=testuser1775338134842%40test.com&password=Password123
 
-16:00:58.218 [main] DEBUG com.intuit.karate - response time in milliseconds: 436
+16:28:59.934 [main] DEBUG com.intuit.karate - response time in milliseconds: 645
 1 < 200
-1 < Date: Sat, 04 Apr 2026 21:00:55 GMT
+1 < Date: Sat, 04 Apr 2026 21:28:56 GMT
 1 < Content-Type: text/html; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -207,26 +205,26 @@ email=testuser1775336454816%40test.com&password=Password123
 1 < allow: DELETE, OPTIONS
 1 < x-powered-by: Phusion Passenger(R) 6.1.2
 1 < status: 200 OK
-1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MbURI7Z%2FNkRlQ5lqTmAF%2F%2F%2BpytgTzrBJAhl0BpE4OUZBb88nSvSwqxt7HFfT6spejNuh9dxu1nLkfiZzCXENyIXUn5se1kGFJc4RD2Dg%2FAuYkW4worQXktM3t9UWlXuwtL98eURp7DG9"}]}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=CZa2VptaOcPYuJkjS%2BYEpBvy4p11aJK3ZI6ZGYiRo6T2MmN9zKRSZuZQsCEgMCpfcxEfN%2Bv9X4tv7HqSPUYDmx9t%2FIsx5EClZ4CzpkYNcq4269vf39XOzSSN5q3Uu77uw2LeOQjFQhMr"}]}
 1 < Server: cloudflare
 1 < cf-cache-status: DYNAMIC
 1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
-1 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=267
-1 < CF-RAY: 9e733ecd3902a539-MIA
+1 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=305
+1 < CF-RAY: 9e7367d9db88b3dd-MIA
 1 < alt-svc: h3=":443"; ma=86400
 {"responseCode": 200, "message": "Account deleted!"}
 
 ---------------------------------------------------------
 feature: classpath:features/deleteUser.feature
-scenarios:  1 | passed:  1 | failed:  0 | time: 0.4430
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.6544
 ---------------------------------------------------------
 
-16:00:58.275 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:features/deleteUser.feature
+16:29:00.018 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 4 (0 remaining) classpath:features/deleteUser.feature
 Karate version: 1.5.0
 ======================================================
-elapsed:   5.20 | threads:    1 | thread time: 2.46 
-features:     4 | skipped:    0 | efficiency: 0.47
+elapsed:   6.74 | threads:    1 | thread time: 4.00 
+features:     4 | skipped:    0 | efficiency: 0.59
 scenarios:    4 | passed:     4 | failed: 0
 ======================================================
 
